@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".verificationactivity">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <GridLayout
+        android:id="@+id/gridlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+
+        >
+
+        <ImageView
+            android:id="@+id/image_view1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse1"
+            android:src="@drawable/img1"
+            android:tag="1"/>
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse2"
+            android:src="@drawable/img2"
+            android:tag="2"/>
+
+        <ImageView
+            android:id="@+id/image_view3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse3"
+            android:src="@drawable/img3"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/image_view4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse4"
+            android:src="@drawable/img4"
+            android:tag="4"/>
+
+        <ImageView
+            android:id="@+id/image_view5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse5"
+            android:src="@drawable/img5"
+            android:tag="5"/>
+        <ImageView
+            android:id="@+id/image_view6"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse6"
+            android:src="@drawable/img6"
+            android:tag="6"/>
+        <ImageView
+            android:id="@+id/image_view7"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse7"
+            android:src="@drawable/img7"
+            android:tag="7"/>
+        <ImageView
+            android:id="@+id/image_view8"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse8"
+            android:src="@drawable/img8"
+            android:tag="8"/>
+        <ImageView
+            android:id="@+id/image_view9"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:onClick="changeSourse9"
+            android:src="@drawable/img9"
+            android:tag="9"/>
+
+
+
+
+
+
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textview"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:layout_marginBottom="70dp"
+        android:text="Select the traffic lights"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.125" />
+
+    <CheckBox
+        android:id="@+id/checkboxid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="106dp"
+        android:text="I'm not a robot"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gridlayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
+
+    <Button
+        android:id="@+id/verifybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="30dp"
+        android:background="#009688"
+
+        android:onClick="btn_setdialog"
+
+        android:text="Verify"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxid1" />
+
+<!--    android:onClick="btn_setdialog"-->
+
+
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkboxid1"
+        app:layout_constraintTop_toBottomOf="@+id/gridlayout1"
+        app:layout_constraintVertical_bias="0.533"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,23 @@ public class information extends AppCompatActivity {
 
                 else{
 
-                    Intent intent = new Intent(information.this,verification.class);
+
+                    Intent intent = new Intent(information.this,verificationactivity.class);
+
+                    intent.putExtra("name",nametext);
+                    intent.putExtra("email",emailtext);
+
+                    intent.putExtra("phone",phonetext);
+
+//                    i.putExtra("choose car",spinnertext);
+//                    i.putExtra("dailyrentvalue", dailytext1);
+//                    i.putExtra("numberofdaysss",numberofdays1);
+//                    i.putExtra("value without tax",value);
+//                    i.putExtra("total amount",totalvalue);
+
+
+
+
                     startActivity(intent);
 
 
